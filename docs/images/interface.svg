@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720">
+<title>人生天数壁纸界面结构示意</title>
+<rect width="720" height="720" rx="16" fill="#f5f3ee"/>
+<g font-family="sans-serif" fill="#252b2b">
+<text x="48" y="64" font-size="28" font-weight="700">让每一天，有迹可循。</text>
+<text x="48" y="108" font-size="15" fill="#667070">界面结构示意 · 不含个人配置</text>
+<text x="48" y="163" font-size="18">起始日期</text><rect x="208" y="137" width="340" height="42" rx="6" fill="white"/><text x="224" y="165" font-size="20">2024 年 1 月 1 日</text>
+<text x="48" y="233" font-size="18">玩家名字</text><rect x="208" y="207" width="340" height="42" rx="6" fill="white"/><text x="224" y="235" font-size="20">Player</text>
+<rect x="48" y="282" width="240" height="44" rx="6" fill="#e2e4e1"/><text x="85" y="310" font-size="18">选择背景图片…</text>
+<rect x="308" y="282" width="240" height="44" rx="6" fill="#e2e4e1"/><text x="360" y="310" font-size="18">恢复自带照片</text>
+<text x="48" y="364" font-size="17">当前背景：自带背景</text>
+<rect x="48" y="403" width="20" height="20" rx="3" fill="white" stroke="#9aa39f"/><text x="82" y="420" font-size="16">兼容清理旧记录（默认关闭）</text>
+<text x="48" y="478" font-size="25">今天是第 2 天</text>
+<rect x="48" y="530" width="360" height="46" rx="6" fill="#dce3df"/><text x="94" y="560" font-size="19">应用并开启每日更新</text>
+<text x="48" y="626" font-size="17" fill="#667070">图片仅在本机处理，不上传。</text>
+<text x="48" y="656" font-size="17" fill="#667070">应用后可退出界面，后台按自然日更新。</text>
+</g></svg>

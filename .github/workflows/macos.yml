@@ -1,0 +1,26 @@
+name: macOS validation
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test-and-build:
+    runs-on: macos-14
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Shared logic and privacy tests
+        run: zsh scripts/test.sh
+      - name: Clean-source universal build
+        run: zsh 构建安装包.command --app-only
+      - name: Preview without changing desktop settings
+        shell: bash
+        run: |
+          export DAYWALLPAPER_PREVIEW_ROOT="$RUNNER_TEMP/wallpaper-preview"
+          export DAYWALLPAPER_PREVIEW_DATE="2024-01-02"
+          "dist/人生天数壁纸.app/Contents/Resources/day-wallpaper" --preview
+          test -s "$DAYWALLPAPER_PREVIEW_ROOT/wallpaper.png"
+          lipo -archs "dist/人生天数壁纸.app/Contents/Resources/day-wallpaper"
