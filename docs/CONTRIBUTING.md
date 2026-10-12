@@ -1,6 +1,6 @@
 # 贡献指南
 
-在 macOS 上安装 Xcode Command Line Tools 与 Python 3。在项目目录执行 `zsh scripts/test.sh` 与 `zsh 构建安装包.command --app-only`。
+在 macOS 上安装 Xcode Command Line Tools 与 Python 3。在项目目录执行 `zsh scripts/test.sh` 与 `zsh scripts/build.sh --app-only`。
 
 测试使用临时目录和合成图片，不访问或修改实际桌面、LaunchAgents、个人日期设置。预览使用 `--preview`，也不得触发系统清理。
 

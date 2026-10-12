@@ -6,11 +6,11 @@
 
 ## GitHub 发布流程
 
-先确认许可，更新 `AppInfo.plist` 与 CHANGELOG，再执行测试、通用架构构建和手动 GUI 验证。CI 只测试和构建，不建立 Release，也不发布个人照片。
+先确认许可，更新 `Resources/Info.plist` 与 docs/CHANGELOG，再执行测试、通用架构构建和手动 GUI 验证。CI 只测试和构建，不建立 Release，也不发布个人照片。
 
 运行 `python3 scripts/export_public_source.py /private/tmp/life-days-public` 导出白名单源码。核对其中的 README、素材及许可后，再在该目录初始化 Git 并设置远程。不要把上一级“技能树”目录整体上传。
 
-DMG 放到 GitHub Releases，不放源码提交中。历史 1.7 安装包在照片元数据清理前生成，不应直接公开上传；应从当前干净源码重新构建。使用授权图片构建二进制前，须单独核对素材许可；`.gitignore` 不能阻止图片进入二进制。发布前完成 Developer ID 签名、Hardened Runtime、Apple 公证与 stapling。凭据由仓库 Secret 或钥匙串提供，不写入源码。
+DMG 放到 GitHub Releases，不放源码提交中。历史 1.7 安装包在照片元数据清理前生成，不应直接公开上传；应从当前干净源码重新构建。使用授权图片构建二进制前，须单独核对素材许可；`.gitignore` 不能阻止图片进入二进制。正式版公开分发前完成 Developer ID 签名、Hardened Runtime、Apple 公证与 stapling。临时签名包仅能作为明确标注未公证的预发布测试版，不应冒充正式签名版本。凭据由仓库 Secret 或钥匙串提供，不写入源码。
 
 ## Mac App Store
 

@@ -60,7 +60,7 @@ NSGraphicsContext.saveGraphicsState()
 NSGraphicsContext.current = NSGraphicsContext(bitmapImageRep: bitmap)
 let executable = URL(fileURLWithPath: CommandLine.arguments[0]).standardizedFileURL.deletingLastPathComponent()
 let custom = config?["backgroundMode"] == "custom" ? [root.appendingPathComponent("custom-background.jpg")] : []
-let candidates = custom + [executable.appendingPathComponent("background.jpg"), URL(fileURLWithPath: fm.currentDirectoryPath).appendingPathComponent("资源/background.jpg")]
+let candidates = custom + [executable.appendingPathComponent("background.jpg"), URL(fileURLWithPath: fm.currentDirectoryPath).appendingPathComponent("Resources/background.jpg")]
 guard let background = candidates.compactMap({ NSImage(contentsOf: $0) }).first else {
     fputs("缺少背景图片 background.jpg\n", stderr); exit(1)
 }

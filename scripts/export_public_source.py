@@ -6,14 +6,14 @@ import shutil
 
 PROJECT = Path(__file__).resolve().parents[1]
 FILES = [
-    'README.md', 'LICENSE', 'ASSETS.md', 'PRIVACY.md', 'SECURITY.md',
-    'CONTRIBUTING.md', 'CHANGELOG.md', '.gitignore', 'AppInfo.plist',
-    'WallpaperApp.swift', 'DayWallpaper.swift', 'Shared.swift',
-    '构建安装包.command', '安装天数壁纸.command', '发布/使用说明.txt',
+    'README.md', 'LICENSE', 'docs/ASSETS.md', 'docs/PRIVACY.md', 'SECURITY.md',
+    'docs/CONTRIBUTING.md', 'docs/CHANGELOG.md', '.gitignore', 'Resources/Info.plist',
+    'Sources/WallpaperApp.swift', 'Sources/DayWallpaper.swift', 'Sources/Shared.swift',
+    'scripts/build.sh', 'scripts/open-app.command', 'Resources/使用说明.txt',
     'scripts/test.sh', 'scripts/strip_photo_metadata.py',
     'scripts/make_example_background.swift', 'scripts/make_icon.swift', 'scripts/export_public_source.py',
     'Tests/main.swift', 'Tests/test_metadata.py',
-    'docs/UNINSTALL.md', 'docs/RELEASING.md', 'docs/VALIDATION.md', 'docs/LICENSE-MIT.proposed',
+    'docs/INSTALL.md', 'docs/DEVELOPMENT.md', 'docs/UNINSTALL.md', 'docs/RELEASING.md', 'docs/VALIDATION.md', 'docs/LICENSE-MIT.proposed',
     'docs/images/interface.svg', 'docs/images/example-wallpaper.png', 'docs/images/lion-wallpaper.jpg',
     'bonus/README.md', 'bonus/lion.jpg',
     '.github/workflows/macos.yml', '.github/ISSUE_TEMPLATE/bug_report.md',

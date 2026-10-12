@@ -1,10 +1,8 @@
 .DS_Store
 /dist/
-/发布/*.app/
-/发布/Applications
 *.dmg
 /预览.png
-/资源/background.jpg
+/Resources/background.jpg
 *.log
 settings.plist
 last-date.txt

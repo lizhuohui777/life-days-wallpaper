@@ -15,7 +15,7 @@ jobs:
       - name: Shared logic and privacy tests
         run: zsh scripts/test.sh
       - name: Clean-source universal build
-        run: zsh 构建安装包.command --app-only
+        run: zsh scripts/build.sh --app-only
       - name: Preview without changing desktop settings
         shell: bash
         run: |
