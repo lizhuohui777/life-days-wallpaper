@@ -28,16 +28,13 @@
 
 程序默认使用自动生成的山丘背景。狮子照片独立放在 `bonus/` 中，不自动打包进应用。
 
-<details>
-<summary>查看界面结构与默认背景</summary>
+### 查看原生界面结构与默认背景
 
 ![界面结构示意](docs/images/interface.svg)
 
 ![程序默认山丘背景](docs/images/example-wallpaper.png)
 
 界面图为结构示意，非系统截图；两张壁纸图由程序预览模式生成。
-
-</details>
 
 ## 每日更新
 
