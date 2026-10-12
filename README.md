@@ -1,5 +1,7 @@
 # 人生天数壁纸 / Life Days Wallpaper
 
+[![macOS validation](https://github.com/lizhuohui777/life-days-wallpaper/actions/workflows/macos.yml/badge.svg)](https://github.com/lizhuohui777/life-days-wallpaper/actions/workflows/macos.yml)
+
 一个 macOS 原生小工具，把起始日期到今天的累计天数显示在桌面上。起始当天计为第 1 天。
 
 ![界面结构示意](docs/images/interface.svg)
@@ -62,7 +64,7 @@ launchctl bootout "gui/$(id -u)/local.daywallpaper"
 
 固定画布为 3024 × 1964，不同屏幕比例或锁屏时钟下可能裁切或遮挡；不提供视频屏保。不同桌面空间可能保留系统自己的配置。兼容清理依赖未公开的系统存储格式，未来 macOS 版本可能变化，应只在确有旧记录问题时勾选。
 
-当前版本不适合直接提交 Mac App Store，见 [发布说明](docs/RELEASING.md)。CI 尚未在 GitHub 上运行；本地验证结果不能替代实际系统交互或 App Review。
+当前版本不适合直接提交 Mac App Store，见 [发布说明](docs/RELEASING.md)。首次 GitHub macOS CI 已通过，覆盖共享逻辑测试、通用架构构建和独立预览；这不能替代实际系统交互或 App Review。
 
 ## 项目结构
 

@@ -10,6 +10,6 @@
 - 文档本地链接和 SVG 有效；公开源码不含原照片、用户路径、原玩家名、个人默认日期、旧字体、日志或安装包。
 - 原照片 JPEG 元数据清理结果与脚本一致，重复清理不再改变；原始照片备份保留在项目外。
 
-GitHub CI 已配置但未在远程运行。本地验证时尚未执行 GitHub 发布；Apple 公证与 App Store 审核未执行，也没有将仓库准备构建替换为用户当前已安装应用。
+首次 GitHub CI 已在远程运行并成功完成：[macOS validation](https://github.com/lizhuohui777/life-days-wallpaper/actions/runs/38224257685)。本地验证时尚未执行 GitHub 发布；Apple 公证与 App Store 审核未执行，也没有将仓库准备构建替换为用户当前已安装应用。
 
 本地沙箱内 iconutil 报 Invalid Iconset；逐档 PNG 尺寸核对正确，正常 macOS 环境中完整构建和图标生成验证通过。这属于工具运行环境限制，不应把失败视为已有 CI 成功。
