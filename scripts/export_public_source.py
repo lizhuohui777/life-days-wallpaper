@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export a source-only allowlist. Never include private photos or binary releases."""
+"""Export source, documentation and approved bonus images; exclude originals and binary releases."""
 from pathlib import Path
 import argparse
 import shutil
@@ -14,7 +14,8 @@ FILES = [
     'scripts/make_example_background.swift', 'scripts/make_icon.swift', 'scripts/export_public_source.py',
     'Tests/main.swift', 'Tests/test_metadata.py',
     'docs/UNINSTALL.md', 'docs/RELEASING.md', 'docs/VALIDATION.md', 'docs/LICENSE-MIT.proposed',
-    'docs/images/interface.svg', 'docs/images/example-wallpaper.png',
+    'docs/images/interface.svg', 'docs/images/example-wallpaper.png', 'docs/images/lion-wallpaper.jpg',
+    'bonus/README.md', 'bonus/lion.jpg',
     '.github/workflows/macos.yml', '.github/ISSUE_TEMPLATE/bug_report.md',
     '.github/pull_request_template.md',
 ]
@@ -39,7 +40,7 @@ def main():
         target = destination / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)
-    print(f'Exported {len(FILES)} source/documentation files. Private photo, logs, user settings, apps and DMGs excluded.')
+    print(f'Exported {len(FILES)} source/documentation files. Original photos, logs, user settings, apps and DMGs excluded; approved bonus images included.')
 
 
 if __name__ == '__main__':
